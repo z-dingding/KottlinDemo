@@ -1,7 +1,6 @@
-package com.hxzk.kottlindemo.base
+package com.hxzk.kottlindemo.start.base
 
 import android.os.Bundle
-import android.os.PersistableBundle
 import android.support.v7.app.AppCompatActivity
 import com.hxzk.kottlindemo.R
 import java.lang.Integer.parseInt
@@ -108,4 +107,7 @@ class VarAndFunActivity : AppCompatActivity() {
         }
         return list
     }
+
+
+
 }

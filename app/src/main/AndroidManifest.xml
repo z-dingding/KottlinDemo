@@ -17,9 +17,24 @@
             </intent-filter>
         </activity>
 
+        <!-- ===========开始部分================-->
+         <activity android:name=".StartActivity"/>
+        <activity android:name="com.hxzk.kottlindemo.start.base.VarAndFunActivity"/>
+        <activity android:name="com.hxzk.kottlindemo.start.habitusage.HabitUsageActivity"/>
+        <activity android:name="com.hxzk.kottlindemo.start.codespecification.CodeSpecificationActivity"/>
 
-        <activity android:name=".base.VarAndFunActivity"/>
-        <activity android:name=".habitusage.HabitUsageActivity"/>
+        <!--============ 基础部分 ================-->
+        <activity android:name=".BaseActivity"/>
+        <activity android:name=".base.BaseTypeActivity"/>
+        <activity android:name=".base.PackageAndImportActivity"/>
+        <activity android:name=".base.ControlStreamActivity"/>
+        <activity android:name=".base.BackAndJumpActivity"/>
+        <!--=========== 类和对象 =================-->
+         <!--类与继承-->
+        <activity android:name=".classandobject.ClassAndExtendsActivity"/>
+        <!--属性和字段-->
+        <activity android:name=".classandobject.PropertyAndFieleActivity"/>
+
     </application>
 
 </manifest>
