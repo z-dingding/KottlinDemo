@@ -30,10 +30,13 @@
         <activity android:name=".base.ControlStreamActivity"/>
         <activity android:name=".base.BackAndJumpActivity"/>
         <!--=========== 类和对象 =================-->
+        <activity android:name=".ClassAndObjectActivity"/>
          <!--类与继承-->
         <activity android:name=".classandobject.ClassAndExtendsActivity"/>
         <!--属性和字段-->
         <activity android:name=".classandobject.PropertyAndFieleActivity"/>
+        <!--接口-->
+        <activity android:name=".classandobject.InterfaceActivity"/>
 
     </application>
 
