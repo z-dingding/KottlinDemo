@@ -1,43 +1,38 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.hxzk.kottlindemo">
+          package="com.hxzk.kottlindemo">
 
     <application
-        android:allowBackup="true"
-        android:icon="@mipmap/ic_launcher"
-        android:label="@string/app_name"
-        android:roundIcon="@mipmap/ic_launcher_round"
-        android:supportsRtl="true"
-        android:theme="@style/AppTheme">
+            android:allowBackup="true"
+            android:icon="@mipmap/ic_launcher"
+            android:label="@string/app_name"
+            android:roundIcon="@mipmap/ic_launcher_round"
+            android:supportsRtl="true"
+            android:theme="@style/AppTheme">
+        <activity android:name=".classandobject.VisiableModifierActivity">
+        </activity>
         <activity android:name=".MainActivity">
             <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
+                <action android:name="android.intent.action.MAIN"/>
 
-                <category android:name="android.intent.category.LAUNCHER" />
+                <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
-        </activity>
-
-        <!-- ===========开始部分================-->
-         <activity android:name=".StartActivity"/>
-        <activity android:name="com.hxzk.kottlindemo.start.base.VarAndFunActivity"/>
-        <activity android:name="com.hxzk.kottlindemo.start.habitusage.HabitUsageActivity"/>
-        <activity android:name="com.hxzk.kottlindemo.start.codespecification.CodeSpecificationActivity"/>
-
-        <!--============ 基础部分 ================-->
+        </activity> <!-- ===========开始部分================ -->
+        <activity android:name=".StartActivity"/>
+        <activity android:name=".start.base.VarAndFunActivity"/>
+        <activity android:name=".start.habitusage.HabitUsageActivity"/>
+        <activity
+                android:name=".start.codespecification.CodeSpecificationActivity"/> <!-- ============ 基础部分 ================ -->
         <activity android:name=".BaseActivity"/>
         <activity android:name=".base.BaseTypeActivity"/>
         <activity android:name=".base.PackageAndImportActivity"/>
         <activity android:name=".base.ControlStreamActivity"/>
-        <activity android:name=".base.BackAndJumpActivity"/>
-        <!--=========== 类和对象 =================-->
+        <activity android:name=".base.BackAndJumpActivity"/> <!-- =========== 类和对象 ================= -->
         <activity android:name=".ClassAndObjectActivity"/>
-         <!--类与继承-->
-        <activity android:name=".classandobject.ClassAndExtendsActivity"/>
-        <!--属性和字段-->
-        <activity android:name=".classandobject.PropertyAndFieleActivity"/>
-        <!--接口-->
-        <activity android:name=".classandobject.InterfaceActivity"/>
-
+        <activity android:name=".classandobject.ClassAndExtendsActivity"/> <!-- 类与继承 -->
+        <activity android:name=".classandobject.PropertyAndFieleActivity"/> <!-- 属性和字段 -->
+        <activity android:name=".classandobject.InterfaceActivity"/><!-- 接口 -->
+       <activity android:name=".classandobject.VisiableModifierActivity"/> <!--可见修饰符-->
     </application>
 
 </manifest>

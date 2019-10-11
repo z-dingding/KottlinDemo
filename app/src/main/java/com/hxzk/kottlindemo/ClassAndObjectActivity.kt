@@ -6,6 +6,7 @@ import android.support.v7.app.AppCompatActivity
 import com.hxzk.kottlindemo.classandobject.ClassAndExtendsActivity
 import com.hxzk.kottlindemo.classandobject.InterfaceActivity
 import com.hxzk.kottlindemo.classandobject.PropertyAndFieleActivity
+import com.hxzk.kottlindemo.classandobject.VisiableModifierActivity
 import kotlinx.android.synthetic.main.activity_classandobject.*
 
 /**
@@ -30,6 +31,9 @@ class ClassAndObjectActivity : AppCompatActivity() {
             startActivity(intface)
         }
 
-
+        btn_visiablemodifier.setOnClickListener {
+            var intface =Intent(this,VisiableModifierActivity ::class.java)
+            startActivity(intface)
+        }
     }
 }

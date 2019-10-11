@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".classandobject.VisiableModifierActivity">
+    <ScrollView android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintVertical_bias="0.0" android:layout_marginBottom="8dp">
+        <LinearLayout android:layout_width="match_parent"
+                      android:layout_height="match_parent"
+                      android:orientation="vertical">
+            <TextView
+                    android:text="类、对象、接口、构造函数、方法、属性和它们的 setter 都可以有 可见性修饰符。 （getter 总是与属性有着相同的可见性。） 在 Kotlin 中有这四个可见性修饰符：private、 protected、 internal 和 public。 如果没有显式指定修饰符的话，默认可见性是 public。"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textView3"
+                    app:layout_constraintStart_toStartOf="parent"
+                    android:layout_marginStart="8dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    android:layout_marginEnd="8dp"
+                    app:layout_constraintTop_toTopOf="parent"/>
+            <TextView
+                    android:text="下面展示在包中声明也就是在顶层声明的情况"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textView4"
+                    app:layout_constraintStart_toStartOf="parent"
+                    android:layout_marginStart="8dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    android:layout_marginEnd="8dp"
+                    app:layout_constraintTop_toBottomOf="@+id/textView3"
+                    android:layout_marginTop="80dp"/>
+            <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="239dp"
+                    app:srcCompat="@mipmap/visiablemodifier_package"
+                    android:id="@+id/imageView"
+                    app:layout_constraintStart_toStartOf="parent"
+                    android:layout_marginStart="8dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView4"/>
+            <TextView
+                    android:text="对于类和接口声明的成员：
+\n private 意味着只在这个类内部（包含其所有成员）可见
+\n protected—— 和 private一样 + 在子类中可见
+\n internal —— 能见到类声明的 本模块内 的任何客户端都可见其 internal 成员
+\n public —— 能见到类声明的任何客户端都可见其 public 成员。
+\n 请注意在 Kotlin 中，外部类不能访问内部类的 private 成员,如果你覆盖一个 protected 成员并且没有显式指定其可见性，该成员还会是 protected 可见性"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    tools:layout_editor_absoluteY="519dp"
+                    android:id="@+id/textView5"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginEnd="8dp"/>
+            <ImageView
+                    android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+            android:src="@mipmap/visiablemodifier_class"/>
+            <TextView android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+            android:text="要指定一个类的的主构造函数的可见性，使用以下语法（注意你需要添加一个显式 constructor 关键字）："/>
+            <ImageView
+                    android:src="@mipmap/primaryconstructor"
+                    android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"/>
+
+            <TextView android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+            android:text="局部声明:局部变量、函数和类不能有可见性修饰符。"/>
+            <TextView android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:layout_marginTop="20dp"
+                      android:text="可见性修饰符internal意味着该成员只在相同模块内可见。更具体地说是一个模块是编译在一起的一套Kotlin文件,比如一次任务执行所编译的一套文件，应该是平时说的module吧"/>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</android.support.constraint.ConstraintLayout>
