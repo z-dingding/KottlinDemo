@@ -3,10 +3,7 @@ package com.hxzk.kottlindemo
 import android.content.Intent
 import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
-import com.hxzk.kottlindemo.classandobject.ClassAndExtendsActivity
-import com.hxzk.kottlindemo.classandobject.InterfaceActivity
-import com.hxzk.kottlindemo.classandobject.PropertyAndFieleActivity
-import com.hxzk.kottlindemo.classandobject.VisiableModifierActivity
+import com.hxzk.kottlindemo.classandobject.*
 import kotlinx.android.synthetic.main.activity_classandobject.*
 
 /**
@@ -35,5 +32,14 @@ class ClassAndObjectActivity : AppCompatActivity() {
             var intface =Intent(this,VisiableModifierActivity ::class.java)
             startActivity(intface)
         }
+        btn_extension.setOnClickListener {
+            var extensionIntent = Intent(this,ExtensionActivity ::class.java)
+            startActivity(extensionIntent)
+        }
+        btn_databean.setOnClickListener {
+            var databean = Intent(this,DataBeanActivity ::class.java)
+            startActivity(databean)
+        }
+
     }
 }

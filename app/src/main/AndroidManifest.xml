@@ -9,7 +9,7 @@
             android:roundIcon="@mipmap/ic_launcher_round"
             android:supportsRtl="true"
             android:theme="@style/AppTheme">
-        <activity android:name=".classandobject.VisiableModifierActivity">
+        <activity android:name=".classandobject.DataBeanActivity">
         </activity>
         <activity android:name=".MainActivity">
             <intent-filter>
@@ -31,8 +31,9 @@
         <activity android:name=".ClassAndObjectActivity"/>
         <activity android:name=".classandobject.ClassAndExtendsActivity"/> <!-- 类与继承 -->
         <activity android:name=".classandobject.PropertyAndFieleActivity"/> <!-- 属性和字段 -->
-        <activity android:name=".classandobject.InterfaceActivity"/><!-- 接口 -->
-       <activity android:name=".classandobject.VisiableModifierActivity"/> <!--可见修饰符-->
+        <activity android:name=".classandobject.InterfaceActivity"/> <!-- 接口 -->
+        <activity android:name=".classandobject.VisiableModifierActivity"/> <!-- 可见修饰符 -->
+        <activity android:name=".classandobject.ExtensionActivity"/>
     </application>
 
 </manifest>

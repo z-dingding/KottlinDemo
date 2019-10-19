@@ -41,4 +41,21 @@
             app:layout_constraintStart_toStartOf="parent" android:layout_marginStart="8dp"
             android:layout_marginTop="40dp" app:layout_constraintTop_toBottomOf="@+id/btn_interface"
             app:layout_constraintHorizontal_bias="0.496"/>
+    <Button
+            android:text="扩展"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn_extension" android:layout_marginTop="40dp"
+            app:layout_constraintTop_toBottomOf="@+id/btn_visiablemodifier"
+            app:layout_constraintStart_toStartOf="@+id/btn_visiablemodifier"
+            app:layout_constraintEnd_toEndOf="@+id/btn_visiablemodifier"/>
+    <Button
+            android:text="数据类"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn_databean" app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="8dp"
+            app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="8dp"
+            app:layout_constraintHorizontal_bias="0.482" app:layout_constraintTop_toBottomOf="@+id/btn_extension"
+            android:layout_marginTop="20dp"/>
 </android.support.constraint.ConstraintLayout>
