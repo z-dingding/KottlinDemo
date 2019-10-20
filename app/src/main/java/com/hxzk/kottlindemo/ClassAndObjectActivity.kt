@@ -11,6 +11,7 @@ import kotlinx.android.synthetic.main.activity_classandobject.*
  * 作用:
  */
 class ClassAndObjectActivity : AppCompatActivity() {
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_classandobject)
@@ -39,6 +40,14 @@ class ClassAndObjectActivity : AppCompatActivity() {
         btn_databean.setOnClickListener {
             var databean = Intent(this,DataBeanActivity ::class.java)
             startActivity(databean)
+        }
+        btn_sealclass.setOnClickListener {
+            var sealClass = Intent(this,SealClassActivity ::class.java)
+            startActivity(sealClass)
+        }
+        btn_generic.setOnClickListener {
+            var sealClass = Intent(this,GenericActivity ::class.java)
+            startActivity(sealClass)
         }
 
     }

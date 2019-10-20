@@ -9,6 +9,12 @@
             android:roundIcon="@mipmap/ic_launcher_round"
             android:supportsRtl="true"
             android:theme="@style/AppTheme">
+        <!--泛型-->
+        <activity android:name=".classandobject.GenericActivity">
+        </activity>
+        <!-- 密封类 -->
+        <activity android:name=".classandobject.SealClassActivity">
+        </activity> <!-- 数据类 -->
         <activity android:name=".classandobject.DataBeanActivity">
         </activity>
         <activity android:name=".MainActivity">
