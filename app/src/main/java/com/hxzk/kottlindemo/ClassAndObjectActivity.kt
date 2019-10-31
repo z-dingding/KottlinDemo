@@ -49,6 +49,14 @@ class ClassAndObjectActivity : AppCompatActivity() {
             var sealClass = Intent(this,GenericActivity ::class.java)
             startActivity(sealClass)
         }
+        btn_inner.setOnClickListener {
+            var innerIntent = Intent(this,InnerClassActivity :: class.java)
+            startActivity(innerIntent)
+        }
+        btn_menu.setOnClickListener {
+            var menuIntent = Intent(this,EnumClassActivity :: class.java)
+            startActivity(menuIntent)
+        }
 
     }
 }

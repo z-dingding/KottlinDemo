@@ -72,12 +72,26 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:id="@+id/btn_sealclass" tools:layout_editor_absoluteY="652dp"
-                    tools:layout_editor_absoluteX="125dp" android:layout_marginTop="20dp"/>
+                    tools:layout_editor_absoluteX="125dp"
+                    android:layout_marginTop="20dp"/>
             <Button
                     android:text="泛型"
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content" android:id="@+id/btn_generic"/>
-
+                    android:layout_height="wrap_content"
+                    android:id="@+id/btn_generic"
+                    android:layout_marginTop="20dp"/>
+         <Button
+                 android:id="@+id/btn_inner"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+         android:text="嵌套类(内部类，内部匿名类)"
+                 android:layout_marginTop="20dp"/>
+            <Button
+                    android:id="@+id/btn_menu"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="枚举类"
+                    android:layout_marginTop="20dp"/>
 
         </LinearLayout>
     </ScrollView>
