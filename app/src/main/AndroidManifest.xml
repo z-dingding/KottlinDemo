@@ -9,10 +9,11 @@
             android:roundIcon="@mipmap/ic_launcher_round"
             android:supportsRtl="true"
             android:theme="@style/AppTheme">
+        <activity android:name=".classandobject.ObjectClassActivity">
+        </activity>
         <!-- 枚举类 -->
         <activity android:name=".classandobject.EnumClassActivity">
-        </activity>
-        <!-- 内嵌类 -->
+        </activity> <!-- 内嵌类 -->
         <activity android:name=".classandobject.InnerClassActivity">
         </activity> <!-- 泛型 -->
         <activity android:name=".classandobject.GenericActivity">

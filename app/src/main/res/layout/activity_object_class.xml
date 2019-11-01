@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".classandobject.ObjectClassActivity">
+
+    <ScrollView android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent">
+        <LinearLayout android:layout_width="match_parent"
+                      android:layout_height="match_parent"
+                      android:orientation="vertical">
+            <TextView
+                    android:text="对象表达式，是一种代替Java中的匿名内部类的方法,内部匿名类要么是抽象类(好像说法不对)要么是接口。以View的点击事件为例:
+  \n //kt中的内部匿名类是声明object : 抽象类名或接口{}实现如下:
+  \ntv_object_one.setOnClickListener(object : View.OnClickListener{
+    \n        override fun onClick(v: View?) {
+    \n        }
+    \n    })
+\n//注意：如果如果超类型有一个构造函数，则必须传递适当的构造函数参数给它。 多个超类型可以由跟在冒号后面的逗号分隔的列表指定，如下:
+\nopen class A(x: Int) {
+\n    public open val y: Int = x
+\n}
+\ninterface B { /*……*/ }
+\nval ab: A = object : A(1), B {
+ \n   override val y = 15
+\n}"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tv_object_one"
+                    app:layout_constraintStart_toStartOf="parent"
+                    android:layout_marginStart="8dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    android:layout_marginEnd="8dp"
+                    app:layout_constraintTop_toTopOf="parent"/>
+            <TextView
+                    android:id="@+id/tv_object_two"
+                    android:text="我们也可以直接将object关键字修饰的匿名类赋值给方法，表明这个方法返回的是一个匿名内部类对象.私有方法返回的匿名对象的属性是可以在本地被访问的，非私有方法返回的匿名对象的属性是不能访问的。
+\n// 私有函数，所以其返回类型是匿名对象类型
+ \nprivate fun foo() = object {
+ \n    val x: String = x
+ \n}
+ \n// 公有函数，所以其返回类型是 Any
+ \nfun publicFoo() = object {
+ \n    val x: String = x
+ \n}
+ \nfun bar() {
+   \n  val x1 = foo().x        // 没问题
+ \n    val x2 = publicFoo().x  // 错误：未能解析的引用“x”
+ \n
+ }"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintTop_toBottomOf="@id/tv_object_one"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="50dp"/>
+            <TextView
+                    android:id="@+id/tv_object_three"
+                    android:text="对象表达式中的代码可以访问来自包含它的作用域的变量。
+\nfun countClicks(window: JComponent) {
+\n    var clickCount = 0
+\n    var enterCount = 0
+\n    window.addMouseListener(object : MouseAdapter() {
+\n        override fun mouseClicked(e: MouseEvent) {
+ \n           clickCount++
+ \n       }
+ \n       override fun mouseEntered(e: MouseEvent) {
+  \n          enterCount++
+\n        }
+\n    })
+}" android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintTop_toBottomOf="@id/tv_object_two"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    android:layout_marginTop="50dp"/>
+
+
+            <TextView
+                    android:id="@+id/tv_objcect_four"
+                    android:text="object 关键字后跟一个名称称之为对象声明,就像变量声明一样，对象声明不是一个表达式，不能用在赋值语句的右边。
+对象声明的初始化过程是线程安全的。
+如需引用该对象，我们直接使用其名称即可：如下例子：
+\n object ObjectClass{ //通过object声明对象ObjectClass
+\nfun objectMethod{
+\n//具体执行方法
+\n}
+\n}
+\n//如果引用该对象直接类名.方法名即可
+\nObjectClass.objectMethod()"
+                    android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"/>
+
+            <TextView
+                    android:id="@+id/tv_objcect_five"
+                    android:text="类内部的对象声明可以用 companion 关键字标记：
+\nclass MyClass {
+ \n   companion object Factory {
+ \n       fun create(): MyClass = MyClass()
+ \n   }
+\n}
+ \n//该伴生对象的成员可通过只使用类名作为限定符来调用：
+\nval instance = MyClass.create()
+\n//可以省略伴生对象的名称，在这种情况下将使用名称 Companio
+\nclass MyClass {
+ \n   companion object { }
+\n}
+\nval x = MyClass.Companion
+\n请注意，即使伴生对象的成员看起来像其他语言的静态成员，在运行时他们仍然是真实对象的实例成员，而且，例如还可以实现接口：
+"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="50dp"/>
+            <TextView android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:layout_marginTop="50dp"
+                      android:layout_marginBottom="50dp"
+            android:text="
+\n对象表达式和对象声明之间的语义差异
+\n对象表达式和对象声明之间有一个重要的语义差别：
+\n1.对象表达式是在使用他们的地方立即执行（及初始化）的；
+\n2.对象声明是在第一次被访问到时延迟初始化的；
+\n3.伴生对象的初始化是在相应的类被加载（解析）时，与 Java 静态初始化器的语义相匹配"/>
+        </LinearLayout>
+    </ScrollView>
+</android.support.constraint.ConstraintLayout>

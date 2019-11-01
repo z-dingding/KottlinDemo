@@ -57,6 +57,9 @@ class ClassAndObjectActivity : AppCompatActivity() {
             var menuIntent = Intent(this,EnumClassActivity :: class.java)
             startActivity(menuIntent)
         }
-
+        btn_object.setOnClickListener {
+            var menuIntent = Intent(this,ObjectClassActivity :: class.java)
+            startActivity(menuIntent)
+        }
     }
 }
