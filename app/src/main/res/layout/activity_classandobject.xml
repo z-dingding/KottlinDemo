@@ -98,7 +98,12 @@
                     android:layout_height="wrap_content"
                     android:text="对象"
                     android:layout_marginTop="20dp"/>
-
+            <Button
+                    android:id="@+id/btn_typeAlias"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="类型别名"
+                    android:layout_marginTop="20dp"/>
         </LinearLayout>
     </ScrollView>
 
