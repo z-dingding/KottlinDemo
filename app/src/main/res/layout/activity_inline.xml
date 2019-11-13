@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".classandobject.InlineActivity">
+
+
+    <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:orientation="vertical" android:id="@+id/scrollView2">
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+<TextView android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+android:text="所有的基本类型都有一个与之对应的类，这些类称为包装器类。
+对象包装器类是不可改变的，即一旦构造类包装器类，就不允许更改包装在其中的值。
+同时，对象包装器类还是final，因此不能定义它们的子类。
+\n自动装箱：可以直接将基本类型数据赋值给其对应的包装器类型.
+自动装箱一定要类型严格匹配，包装器类型没有基本类型从小到大的转换
+在赋值的地方，都可以发生自动拆箱与装箱
+\n自动拆箱：和自动装箱的过程相反，可以将包装器类对象赋值给一个基本类型
+在自动拆箱的过程中，赋值号左边是基本类型，因此自动拆箱可以类型不严格匹配"/>
+            <TextView android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:layout_marginTop="20dp"
+            android:text="有时候，业务逻辑需要围绕某种类型创建包装器。然而，由于额外的堆内存分配问题，它会引入运行时的性能开销.为了解决这类问题，Kotlin 引入了一种被称为 内联类 的特殊类，它通过在类的前面定义一个 inline 修饰符来声明
+/n内联类必须含有唯一的一个属性在主构造函数中初始化。在运行时，将使用这个唯一属性来表示内联类的实例,如下:"/>
+            <ImageView android:layout_width="match_parent"
+                       android:layout_height="248dp"
+                       android:src="@mipmap/inlineclass_one"/>
+
+        </LinearLayout>
+    </ScrollView>
+</android.support.constraint.ConstraintLayout>

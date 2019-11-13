@@ -9,6 +9,8 @@
             android:roundIcon="@mipmap/ic_launcher_round"
             android:supportsRtl="true"
             android:theme="@style/AppTheme">
+        <activity android:name=".classandobject.InlineActivity">
+        </activity>
         <activity android:name=".classandobject.TypeAliasActivity">
         </activity>
         <activity android:name=".classandobject.ObjectClassActivity">
