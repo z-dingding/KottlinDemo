@@ -66,7 +66,7 @@ class ClassAndObjectActivity : AppCompatActivity() {
             var menuIntent = Intent(this,TypeAliasActivity :: class.java)
             startActivity(menuIntent)
         }
-        btn_inner.setOnClickListener {
+        btn_inline.setOnClickListener {
             var inLineIntent = Intent(this,InlineActivity :: class.java)
             startActivity(inLineIntent)
         }

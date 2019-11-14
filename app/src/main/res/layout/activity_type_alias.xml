@@ -10,11 +10,21 @@
     <TextView
             android:text="类型别名(使用typealias关键字)定义:类型别名为现有类型提供替代名称(通俗可以理解为给现有类型重新起一个名字)。 如果类型名称太长，你可以另外引入较短的名称，并使用新的名称替代原类型名.它有助于缩短较长的泛型类型。作用可用于一下几个方面
             \n1.通常缩减集合类型是很有吸引力的
-你可以为函数类型提供另外的别名
-你可以为内部类和嵌套类创建新名称"
+\n2.你可以为函数类型提供另外的别名
+\n3,你可以为内部类和嵌套类创建新名称"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/textView17" app:layout_constraintStart_toStartOf="parent"
-            android:layout_marginStart="8dp" app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="8dp"
+            android:id="@+id/textView17"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginEnd="8dp"
             app:layout_constraintTop_toTopOf="parent"/>
+    <ImageView android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               app:layout_constraintStart_toStartOf="parent"
+               android:layout_marginStart="8dp"
+               app:layout_constraintEnd_toEndOf="parent"
+               app:layout_constraintTop_toBottomOf="@+id/textView17"
+         android:src="@mipmap/typealias"/>
 </android.support.constraint.ConstraintLayout>
