@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent" android:layout_height="match_parent"
+        tools:context=".classandobject.EntrustAttributeActivity">
+    <ScrollView android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent">
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+            <TextView android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:text="
+            \n属性委托语法是：val/var 属性名 :类型 by 表达式。
+            \n在 by 后面的表达式是该委托，
+             \n因为属性对应的 get()（与 set()）会被委托给它的 getValue() 与 setValue() 方法。
+              \n属性的委托不必实现任何的接口，但是需要提供一个 getValue() 函数（与 setValue()对于 var 属性）"/>
+            <ImageView android:layout_width="match_parent"
+                       android:layout_height="300dp"
+                       android:scaleType="fitCenter"
+                       android:src="@mipmap/entrust_property_one"/>
+            <TextView android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+            android:text="
+            延迟属性 Lazy:lazy() 是接受一个 lambda 并返回一个 Lazy T 实例的函数，
+            \n返回的实例可以作为实现延迟属性的委托：
+            \n第一次调用 get() 会执行已传递给 lazy() 的 lambda 表达式并记录结果，
+             \n后续调用 get() 只是返回记录的结果。"/>
+            <ImageView android:layout_width="wrap_content"
+                       android:layout_height="200dp"
+                       android:scaleType="fitCenter"
+                       android:src="@mipmap/entrust_property_two"/>
+            <TextView android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:text="
+                      Delegates.observable() 接受两个参数：初始值与修改时处理程序（handler）。
+                       \n每当我们给属性赋值时会调用该处理程序（在赋值后执行）。
+                       \n它有三个参数：被赋值的属性、旧值与新值：
+            "/>
+            <ImageView android:layout_width="wrap_content"
+                       android:layout_height="200dp"
+                       android:scaleType="fitCenter"
+                       android:src="@mipmap/entrust_property_three"/>
+            <TextView android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+            android:text="把属性储存在映射(map)中:"/>
+            <ImageView android:layout_width="wrap_content"
+                       android:layout_height="300dp"
+                       android:scaleType="fitCenter"
+                       android:src="@mipmap/entrust_property_four"/>
+            <TextView android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+            android:text="可以将局部变量声明为委托属性。 例如，你可以使一个局部变量惰性初始化："
+            />
+            <ImageView android:layout_width="wrap_content"
+                       android:layout_height="200dp"
+                       android:scaleType="fitCenter"
+                       android:src="@mipmap/entrust_property_five"/>
+            <TextView android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+            android:text="属性委托对象总结："/>
+            <ImageView android:layout_width="wrap_content"
+                       android:layout_height="200dp"
+                       android:scaleType="fitCenter"
+                       android:src="@mipmap/entrust_property_six"/>
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</android.support.constraint.ConstraintLayout>

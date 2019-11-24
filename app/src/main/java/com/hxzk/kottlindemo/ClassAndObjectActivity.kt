@@ -70,5 +70,9 @@ class ClassAndObjectActivity : AppCompatActivity() {
             var inLineIntent = Intent(this,InlineActivity :: class.java)
             startActivity(inLineIntent)
         }
+       btn_entrust_attribute.setOnClickListener {
+           var entrustAttribut = Intent(this,EntrustAttributeActivity :: class.java)
+           startActivity(entrustAttribut)
+       }
     }
 }
