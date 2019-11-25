@@ -3,6 +3,7 @@ package com.hxzk.kottlindemo
 import android.content.Intent
 import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
+import android.widget.Toast
 import com.hxzk.kottlindemo.classandobject.*
 import kotlinx.android.synthetic.main.activity_classandobject.*
 
@@ -70,9 +71,16 @@ class ClassAndObjectActivity : AppCompatActivity() {
             var inLineIntent = Intent(this,InlineActivity :: class.java)
             startActivity(inLineIntent)
         }
+
        btn_entrust_attribute.setOnClickListener {
            var entrustAttribut = Intent(this,EntrustAttributeActivity :: class.java)
            startActivity(entrustAttribut)
        }
+
+        btn_entrust.setOnClickListener {
+            var inLineIntent = Intent(this,EntrustActivity :: class.java)
+            startActivity(inLineIntent)
+        }
+
     }
 }

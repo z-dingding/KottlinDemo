@@ -111,6 +111,12 @@
                     android:text="内联类"
                     android:layout_marginTop="20dp"/>
             <Button
+                    android:id="@+id/btn_entrust"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="委托"
+                    android:layout_marginTop="20dp"/>
+            <Button
                     android:id="@+id/btn_entrust_attribute"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"

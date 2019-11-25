@@ -27,7 +27,10 @@ class MainActivity : AppCompatActivity() {
             var classAndObject =Intent(this,ClassAndObjectActivity:: class.java)
             startActivity(classAndObject)
         }
-
+        btn_funAndLambda.setOnClickListener {
+            var funAndLambda =Intent(this,FunAndLambdaActivity:: class.java)
+            startActivity(funAndLambda)
+        }
 
     }
 }
