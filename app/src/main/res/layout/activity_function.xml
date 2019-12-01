@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".function_lambda.FunctionActivity">
+
+    <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Kotlin 中的函数使用 fun 关键字声明,
+\n调用成员函数使用点表示法:Stream().read() // 创建类 Stream 实例并调用 read()
+\n函数参数使用 Pascal 表示法定义，即 name: type。参数用逗号隔开。每个参数必须有显式类型.函数参数可以有默认值，当省略相应的参数时使用默认值默认值通过类型后面的 = 及给出的值来定义。
+\n如果一个基类中方法参数有默认值，那么子类也就是实现类中实现的方法参数不能有默认值"
+                    android:textAllCaps="false" />
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:text="命名参数：通过函数的参数名来给函数的参数赋值，避免多个参数类型相同且都有默认值，要改变其中一个参数的值无法对应的问题。" />
+
+            <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="200dp"
+                    android:layout_marginTop="20dp"
+                    android:src="@mipmap/fun_one" />
+            <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="200dp"
+                    android:layout_marginTop="20dp"
+                    android:src="@mipmap/fun_two" />
+            <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="300dp"
+                    android:layout_marginTop="20dp"
+                    android:src="@mipmap/fun_three" />
+            <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="300dp"
+                    android:layout_marginTop="20dp"
+                    android:src="@mipmap/fun_four" />
+            <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="300dp"
+                    android:layout_marginTop="20dp"
+                    android:src="@mipmap/fun_five" />
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:text="在 Kotlin 中函数可以在文件顶层声明，这意味着你不需要像一些语言如 Java、C# 或 Scala 那样需要创建一个类来保存一个函数。此外除了顶层函数，Kotlin 中函数也可以声明在局部作用域、作为成员函数以及扩展函数。
+\n局部函数:Kotlin 支持局部函数，即一个函数在另一个函数内部,局部函数可以访问外部函数（即闭包）的局部变量.
+\n成员函数:成员函数是在类或对象内部定义的函数.成员函数以点表示法调用.
+\n泛型函数:函数可以有泛型参数，通过在函数名前使用尖括号指定
+\nKotlin 能够扩展一个类的新功能而无需继承该类或者使用像装饰者这样的设计模式。 这通过叫做 扩展 的特殊声明完成。 例如，你可以为一个你不能修改的、来自第三方库中的类编写一个新的函数。 这个新增的函数就像那个原始类本来就有的函数一样，可以用普通的方法调用。 这种机制称为 扩展函数 。此外，也有 扩展属性 ， 允许你为一个已经存在的类添加新的属性。
+\n"/>
+            <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="300dp"
+                    android:layout_marginTop="20dp"
+                    android:src="@mipmap/fun_six" />
+        </LinearLayout>
+    </ScrollView>
+
+
+</android.support.constraint.ConstraintLayout>

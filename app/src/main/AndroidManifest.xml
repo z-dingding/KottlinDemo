@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-          package="com.hxzk.kottlindemo">
+        package="com.hxzk.kottlindemo">
 
     <application
             android:allowBackup="true"
@@ -9,51 +9,40 @@
             android:roundIcon="@mipmap/ic_launcher_round"
             android:supportsRtl="true"
             android:theme="@style/AppTheme">
-        <activity android:name=".FunAndLambdaActivity">
-        </activity>
-        <activity android:name=".classandobject.EntrustAttributeActivity">
-        </activity>
-        <activity android:name=".classandobject.EntrustActivity">
-        </activity>
-        <activity android:name=".classandobject.InlineActivity">
-        </activity>
-        <activity android:name=".classandobject.TypeAliasActivity">
-        </activity>
-        <activity android:name=".classandobject.ObjectClassActivity">
-        </activity> <!-- 枚举类 -->
-        <activity android:name=".classandobject.EnumClassActivity">
-        </activity> <!-- 内嵌类 -->
-        <activity android:name=".classandobject.InnerClassActivity">
-        </activity> <!-- 泛型 -->
-        <activity android:name=".classandobject.GenericActivity">
-        </activity> <!-- 密封类 -->
-        <activity android:name=".classandobject.SealClassActivity">
-        </activity> <!-- 数据类 -->
-        <activity android:name=".classandobject.DataBeanActivity">
-        </activity>
+        <activity android:name=".function_lambda.FunctionActivity"></activity>
+        <activity android:name=".FunAndLambdaActivity"></activity>
+        <activity android:name=".classandobject.EntrustAttributeActivity"></activity>
+        <activity android:name=".classandobject.EntrustActivity"></activity>
+        <activity android:name=".classandobject.InlineActivity"></activity>
+        <activity android:name=".classandobject.TypeAliasActivity"></activity>
+        <activity android:name=".classandobject.ObjectClassActivity"></activity> <!-- 枚举类 -->
+        <activity android:name=".classandobject.EnumClassActivity"></activity> <!-- 内嵌类 -->
+        <activity android:name=".classandobject.InnerClassActivity"></activity> <!-- 泛型 -->
+        <activity android:name=".classandobject.GenericActivity"></activity> <!-- 密封类 -->
+        <activity android:name=".classandobject.SealClassActivity"></activity> <!-- 数据类 -->
+        <activity android:name=".classandobject.DataBeanActivity"></activity>
         <activity android:name=".MainActivity">
             <intent-filter>
-                <action android:name="android.intent.action.MAIN"/>
+                <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER"/>
+                <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity> <!-- ===========开始部分================ -->
-        <activity android:name=".StartActivity"/>
-        <activity android:name=".start.base.VarAndFunActivity"/>
-        <activity android:name=".start.habitusage.HabitUsageActivity"/>
-        <activity
-                android:name=".start.codespecification.CodeSpecificationActivity"/> <!-- ============ 基础部分 ================ -->
-        <activity android:name=".BaseActivity"/>
-        <activity android:name=".base.BaseTypeActivity"/>
-        <activity android:name=".base.PackageAndImportActivity"/>
-        <activity android:name=".base.ControlStreamActivity"/>
-        <activity android:name=".base.BackAndJumpActivity"/> <!-- =========== 类和对象 ================= -->
-        <activity android:name=".ClassAndObjectActivity"/>
-        <activity android:name=".classandobject.ClassAndExtendsActivity"/> <!-- 类与继承 -->
-        <activity android:name=".classandobject.PropertyAndFieleActivity"/> <!-- 属性和字段 -->
-        <activity android:name=".classandobject.InterfaceActivity"/> <!-- 接口 -->
-        <activity android:name=".classandobject.VisiableModifierActivity"/> <!-- 可见修饰符 -->
-        <activity android:name=".classandobject.ExtensionActivity"/>
+        <activity android:name=".StartActivity" />
+        <activity android:name=".start.base.VarAndFunActivity" />
+        <activity android:name=".start.habitusage.HabitUsageActivity" />
+        <activity android:name=".start.codespecification.CodeSpecificationActivity" /> <!-- ============ 基础部分 ================ -->
+        <activity android:name=".BaseActivity" />
+        <activity android:name=".base.BaseTypeActivity" />
+        <activity android:name=".base.PackageAndImportActivity" />
+        <activity android:name=".base.ControlStreamActivity" />
+        <activity android:name=".base.BackAndJumpActivity" /> <!-- =========== 类和对象 ================= -->
+        <activity android:name=".ClassAndObjectActivity" />
+        <activity android:name=".classandobject.ClassAndExtendsActivity" /> <!-- 类与继承 -->
+        <activity android:name=".classandobject.PropertyAndFieleActivity" /> <!-- 属性和字段 -->
+        <activity android:name=".classandobject.InterfaceActivity" /> <!-- 接口 -->
+        <activity android:name=".classandobject.VisiableModifierActivity" /> <!-- 可见修饰符 -->
+        <activity android:name=".classandobject.ExtensionActivity" />
     </application>
 
 </manifest>
