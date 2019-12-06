@@ -32,5 +32,8 @@ class MainActivity : AppCompatActivity() {
             startActivity(funAndLambda)
         }
 
+        btn_list.setOnClickListener{
+            startActivity(Intent(this,ListActivity ::class.java))
+        }
     }
 }

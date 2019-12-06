@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+    <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent">
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAllCaps="false"
+                    android:text=" Kotlin 相关的集合类型主要有三类：
+\nList 是一个有序集合，可通过索引（反映元素位置的整数）访问元素。元素值可重复
+\nSet 是唯一元素的集合。它反映了集合（set）的数学抽象：一组无重复的对象。但没有顺序
+\nMap（或者字典）是一组键值对。键是唯一的，每个键都刚好映射到一个值。值可以重复。"/>
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:text="只读集合类型是型变的,这意味着如果类Rectangle继承自Shape则可以在需要List类型Shape的任何地方使用List类型Rectangle.
+                    \n可变集合不是型变的:否则将导致运行时故障如果MutableList类型Rectangle是MutableList类型Shape的子类型你可以在其中插入其他Shape的继承者例如Circle,从而违反了它的Rectangle类型参数。
+                     \n可以理解为只读集合只能进行提供访问集合元素的操作,而可变集合通过写操作扩展相应的只读接口:添加,删除和更新其元素。
+                     \nMutableList是可变集合,List和Set是只读集合"
+                    />
+             <ImageView
+                     android:layout_width="wrap_content"
+                     android:layout_height="350dp"
+                     android:src="@mipmap/collect_itef"/>
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                     android:layout_marginTop="20dp"
+                    android:text="在某些方面，List 与数组（Array）非常相似。 但是，有一个重要的区别：数组的大小是在初始化时定义的，永远不会改变; 反之，List 没有预定义的大小；作为写操作的结果，可以更改 List 的大小：添加，更新或删除元素。
+\n在 Kotlin 中，List 的默认实现是 ArrayList，可以将其视为可调整大小的数组"/>
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:text="Set存储唯一的元素；它们的顺序通常是未定义的。null 元素也是唯一的：一个 Set 只能包含一个 null。当两个 set 具有相同的大小并且对于一个 set 中的每个元素都能在另一个 set 中存在相同元素，则两个 set 相等。"/>
+
+
+            <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="250dp"
+                    android:layout_marginTop="20dp"
+                    android:src="@mipmap/collect_set"/>
+            <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="250dp"
+                    android:layout_marginTop="20dp"
+                    android:src="@mipmap/collect_map"/>
+        </LinearLayout>
+    </ScrollView>
+
+</android.support.constraint.ConstraintLayout>

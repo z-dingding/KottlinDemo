@@ -4,6 +4,7 @@ import android.content.Intent
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import com.hxzk.kottlindemo.function_lambda.FunctionActivity
+import com.hxzk.kottlindemo.function_lambda.LambdaActivity
 import kotlinx.android.synthetic.main.activity_fun_and_lambda.*
 
 class FunAndLambdaActivity : AppCompatActivity() {
@@ -14,7 +15,9 @@ class FunAndLambdaActivity : AppCompatActivity() {
         btn_funciton.setOnClickListener {
             startActivity(Intent(this,FunctionActivity :: class.java))
         }
-        btn_lambda.setOnClickListener {  }
+        btn_lambda.setOnClickListener {
+            startActivity( Intent(this,LambdaActivity :: class.java))
+        }
         btn_innerfunciont.setOnClickListener {  }
 
     }
