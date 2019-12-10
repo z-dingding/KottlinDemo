@@ -4,6 +4,7 @@ import android.content.Intent
 import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
 import com.hxzk.kottlindemo.list.ConstructorListActivity
+import com.hxzk.kottlindemo.list.InteratorActivity
 import com.hxzk.kottlindemo.list.ListOverViewActivity
 import kotlinx.android.synthetic.main.activity_list.*
 
@@ -18,6 +19,9 @@ class ListActivity : AppCompatActivity() {
         }
         btn_constructorList.setOnClickListener {
             startActivity(Intent(this,ConstructorListActivity ::class.java))
+        }
+        btn_interator.setOnClickListener {
+            startActivity(Intent(this,InteratorActivity ::class.java))
         }
     }
 }

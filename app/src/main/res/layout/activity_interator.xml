@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        tools:context=".list.InteratorActivity">
+    <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintRight_toRightOf="parent">
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="通过调用iterator()函数，可以为Iterable接口的继承者(包括Set和List)获得迭代器。获得迭代器后，它将指向集合的第一个元素;
+                    调用next()函数将返回此元素，并将迭代器位置移动到存在的下一个元素。迭代器一旦遍历最后一个元素，就不能再用于检索元素;它也不能重置到以前的任何位置。若要再次遍历集合，请创建一个新的迭代器。"/>
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:text="另一种遍历可迭代集合的方法是众所周知的for循环。在集合上使用for时，您可以隐式地获得迭代器"
+/>
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:text="最后，还有一个有用的forEach()函数，它允许您自动迭代一个集合并为每个元素执行给定的代码。同样的例子是这样的"
+                />
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:text="对于列表，有一个特殊的迭代器实现:ListIterator。它支持在两个方向上迭代列表:向前和向后。向后迭代由函数hasPrevious()和previous()实现。此外，ListIterator使用nextIndex()和previousIndex()函数提供关于元素索引的信息。"/>
+        <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="250dp"
+                android:src="@mipmap/iterator_one"/>
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="istIterator返回的迭代器允许增加和删除操作,Iterator返回的迭代器只能执行删除操作，没有set方法"/>
+
+            <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="200dp"
+                    android:src="@mipmap/iterator_two"/>
+        </LinearLayout>
+
+    </ScrollView>
+
+</android.support.constraint.ConstraintLayout>
