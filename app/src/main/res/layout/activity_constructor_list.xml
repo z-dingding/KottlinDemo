@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".list.ConstructorListActivity">
+    <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+
+
+<TextView
+            android:id="@+id/textView20"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="创建集合的最常用方法是使用标准库函数 listOf&lt;T&gt;()、setOf&lt;T&gt;()、mutableListOf&lt;T&gt;()、mutableSetOf&lt;T&gt;()。 如果以逗号分隔的集合元素列表作为参数，编译器会自动检测元素类型。创建空集合时，须明确指定类型
+\n 同样的，Map 也有这样的函数 mapOf() 与 mutableMapOf()。映射的键和值作为 Pair 对象传递（通常使用中缀函数 to 创建）。注意，to 符号创建了一个短时存活的 Pair 对象，因此建议仅在性能不重要时才使用它。 为避免过多的内存使用，请使用其他方法。例如，可以创建可写 Map 并使用写入操作填充它。 apply() 函数可以帮助保持初始化流畅。"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    <ImageView
+            android:id="@+id/iv_constructorOne"
+            android:layout_width="wrap_content"
+            android:layout_height="150dp"
+            android:src="@mipmap/constructor_one"
+            app:layout_constraintTop_toBottomOf="@id/textView20"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            />
+
+    <TextView
+            android:id="@+id/textView21"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text="要创建与现有集合具有相同元素的集合，可以使用复制操作。在特定时刻通过集合复制函数，例如toList()、toMutableList()、toSet() 等等。创建了集合的快照。 结果是创建了一个具有相同元素的新集合 如果在源集合中添加或删除元素，则不会影响副本。副本也可以独立于源集合进行更改。"
+            app:layout_constraintTop_toBottomOf="@id/iv_constructorOne"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+    <ImageView
+            android:id="@+id/iv_constructorTwo"
+            android:layout_width="wrap_content"
+            android:layout_height="150dp"
+            app:layout_constraintTop_toBottomOf="@id/textView21"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:src="@mipmap/constructor_two"
+            />
+    <ImageView
+            android:id="@+id/iv_constructorThree"
+            android:layout_width="wrap_content"
+            android:layout_height="150dp"
+            app:layout_constraintTop_toBottomOf="@id/iv_constructorTwo"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:src="@mipmap/constructor_three"
+            />
+        </LinearLayout>
+    </ScrollView>
+        </android.support.constraint.ConstraintLayout>

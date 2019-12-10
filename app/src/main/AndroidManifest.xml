@@ -9,7 +9,8 @@
             android:roundIcon="@mipmap/ic_launcher_round"
             android:supportsRtl="true"
             android:theme="@style/AppTheme">
-        <activity android:name=".list.ListOverViewActivity"></activity>
+        <activity android:name=".list.ConstructorListActivity"></activity>
+        <activity android:name=".list.ListOverViewActivity" />
         <activity android:name=".ListActivity" />
         <activity android:name=".function_lambda.LambdaActivity" />
         <activity android:name=".function_lambda.FunctionActivity" />
