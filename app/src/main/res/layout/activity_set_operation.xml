@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".list.SetOperationActivity">
+
+    <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="通常对集合的函数分为成员函数和扩展函数，
+成员函数是必须的如：例如，Collection包含isEmpty()检查其空度的功能；List包含get()用于对元素的索引访问，等等，
+而其他收集操作被声明为扩展函数。这些是过滤，转换，排序和其他收集处理功能"
+                    android:textAllCaps="false" />
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:text="集合的操作分为公共操作和写操作，公共操作主要包括
+转变，筛选，正负运算符，分组等等，后面会说，可以简单理解公共操作不会改变原集合内容(好像不准确)，例如，过滤操作将产生一个新集合，其中包含与过滤谓词匹配的所有元素。" />
+<ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="220dp"
+        android:layout_marginTop="20dp"
+        android:src="@mipmap/listoperation_one"/>
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:text="写操作包括添加，删除和更新元素。例如，sort()就地对可变集合进行排序，以便其状态发生变化；sorted()创建一个新集合，该集合包含按排序顺序相同的元素。" />
+            <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="100dp"
+                    android:layout_marginTop="20dp"
+                    android:src="@mipmap/listoperation_two"/>
+        </LinearLayout>
+    </ScrollView>
+
+</android.support.constraint.ConstraintLayout>
