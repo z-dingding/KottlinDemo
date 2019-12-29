@@ -9,7 +9,8 @@
             android:roundIcon="@mipmap/ic_launcher_round"
             android:supportsRtl="true"
             android:theme="@style/AppTheme">
-        <activity android:name=".list.SetOperationActivity"></activity>
+        <activity android:name=".list.ListReserverActivity"></activity>
+        <activity android:name=".list.SetOperationActivity" />
         <activity android:name=".list.IntervalAndSequence" />
         <activity android:name=".list.InteratorActivity" />
         <activity android:name=".list.ConstructorListActivity" />

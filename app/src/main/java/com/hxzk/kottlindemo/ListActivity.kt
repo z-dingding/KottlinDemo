@@ -28,5 +28,8 @@ class ListActivity : AppCompatActivity() {
         btn_listOperation.setOnClickListener {
             startActivity(Intent(this,SetOperationActivity ::class.java))
         }
+        btn_listReserver.setOnClickListener {
+            startActivity(Intent(this,ListReserverActivity ::class.java))
+        }
     }
 }
