@@ -5,6 +5,15 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         tools:context=".ListActivity">
+<ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center_horizontal">
+
 
     <Button
             android:id="@+id/btn_listOverView"
@@ -76,4 +85,19 @@
             app:layout_constraintTop_toBottomOf="@id/btn_listReserver"
             />
 
+        <Button
+                android:id="@+id/tnb_list_plusandminus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="加减操作符"/>
+
+        <Button
+                android:id="@+id/btn_list_group"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="分组"/>
+    </LinearLayout>
+</ScrollView>
 </android.support.constraint.ConstraintLayout>

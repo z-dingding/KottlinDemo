@@ -34,5 +34,12 @@ class ListActivity : AppCompatActivity() {
         btn_listFliter.setOnClickListener {
             startActivity(Intent(this,FilterActivity ::class.java))
         }
+        tnb_list_plusandminus.setOnClickListener {
+            startActivity(Intent(this,PlusAndMinusOperatorActivity ::class.java))
+        }
+        btn_list_group.setOnClickListener {
+            startActivity(Intent(this,GroupActivity ::class.java))
+
+        }
     }
 }
