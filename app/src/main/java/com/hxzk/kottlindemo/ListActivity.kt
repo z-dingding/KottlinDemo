@@ -41,5 +41,11 @@ class ListActivity : AppCompatActivity() {
             startActivity(Intent(this,GroupActivity ::class.java))
 
         }
+        btn_list_partoflist.setOnClickListener {
+            startActivity(Intent(this,getPartListActivity ::class.java))
+
+        }
+
+
     }
 }
