@@ -9,7 +9,8 @@
             android:roundIcon="@mipmap/ic_launcher_round"
             android:supportsRtl="true"
             android:theme="@style/AppTheme">
-        <activity android:name=".list.getPartListActivity"></activity>
+        <activity android:name=".list.getOneofListActivity"></activity>
+        <activity android:name=".list.getPartListActivity" />
         <activity android:name=".list.GroupActivity" />
         <activity android:name=".list.PlusAndMinusOperatorActivity" />
         <activity android:name=".list.FilterActivity" />
