@@ -1,11 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout
-        xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:app="http://schemas.android.com/apk/res-auto"
         xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         tools:context=".ListActivity">
+<ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center_horizontal">
+
 
     <Button
             android:id="@+id/btn_listOverView"
@@ -47,15 +55,71 @@
                 app:layout_constraintTop_toBottomOf="@id/btn_interator"
              />
     <Button
-            android:id="@+id/btn_sequence"
+            android:id="@+id/btn_listOperation"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
-            android:text="序列"
+            android:text="集合操作概述"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/btn_intervalAndSequence"
+            app:layout_constraintTop_toBottomOf="@id/btn_interator"
+            />
+    <Button
+            android:id="@+id/btn_listReserver"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="集合转换"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/btn_listOperation"
+            />
+    <Button
+            android:id="@+id/btn_listFliter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="过滤"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/btn_listReserver"
             />
 
+        <Button
+                android:id="@+id/tnb_list_plusandminus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="加减操作符"/>
 
+        <Button
+                android:id="@+id/btn_list_group"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="分组"/>
+
+        <Button
+                android:id="@+id/btn_list_partoflist"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="取集合的一部分"/>
+
+
+        <Button
+                android:id="@+id/btn_list_oneoflist"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="取单个元素"/>
+
+        <Button
+                android:id="@+id/btn_list_listorder"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="集合排序"/>
+    </LinearLayout>
+</ScrollView>
 </android.support.constraint.ConstraintLayout>

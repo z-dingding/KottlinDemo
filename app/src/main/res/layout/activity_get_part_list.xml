@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".list.getPartListActivity">
+    <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="slice()返回具有给定索引的集合元素的列表。索引可以作为范围传递，也可以作为整数值的集合传递。"/>
+
+           <ImageView
+                   android:layout_width="wrap_content"
+                   android:layout_height="180dp"
+                   android:src="@mipmap/partoflist_slice"/>
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:text="要获得从第一个元素开始的指定数量的元素，可以使用take()函数。要获取最后一个元素开始的指定数量的元素(倒着来)，请使用takeLast()。注意与下标无关从1开始
+\n 要获取除给定数量的第一个或最后一个元素外的所有元素，分别调用drop()和dropLast()函数。"/>
+
+            <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="120dp"
+                    android:src="@mipmap/partoflist_take_drop"/>
+            <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="140dp"
+                    android:src="@mipmap/partoflist_takewhile_dropwhile"/>
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="若要将集合拆分成给定大小的部分，请使用chunked()函数。"/>
+            <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="150dp"
+                    android:src="@mipmap/partoflist_chunkde"/>
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:text="windowed()返回从每个集合元素开始的元素范围(windows)。所有窗口都作为单个列表的元素返回"/>
+
+<ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/partoflist_windowed"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+</android.support.constraint.ConstraintLayout>

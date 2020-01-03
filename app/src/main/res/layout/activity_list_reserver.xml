@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".list.ListReserverActivity">
+
+    <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Kotlin 标准库为集合 转换 提供了一组扩展函数。 这些函数根据提供的转换规则从现有集合中构建新集合。在此页面中，我们将概述可用的集合转换函数" />
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:text="映射 转换从另一个集合的元素上的函数结果创建一个集合。" />
+
+            <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="230dp"
+                    android:src="@mipmap/listreserver_one" />
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="压缩转换是从两个集合中位置相同的元素构建对。在Kotlin标准库中，这是由zip()扩展函数完成的。" />
+
+            <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="260dp"
+                    android:src="@mipmap/listreserver_two" />
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="关联转换允许从集合元素和与之关联的某些值构建映射。在不同的关联类型中，元素可以是关联映射中的键或值" />
+
+            <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="180dp"
+                    android:src="@mipmap/listreserver_three" />
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="操作嵌套集合,通常用flatten()，flatMap"/>
+            <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="260dp"
+                    android:src="@mipmap/listreserver_four" />
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                android:text="将集合转换为字符串的函数:joinToString()和joinTo()。joinToString()根据提供的参数从集合元素构建单个字符串。joinTo()执行相同的操作，但将结果附加到给定的Appendable对象"/>
+            <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="200dp"
+                    android:src="@mipmap/listreserver_five" />
+        </LinearLayout>
+    </ScrollView>
+
+
+</android.support.constraint.ConstraintLayout>

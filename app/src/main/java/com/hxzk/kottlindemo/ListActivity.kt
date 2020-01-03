@@ -25,8 +25,32 @@ class ListActivity : AppCompatActivity() {
         btn_intervalAndSequence.setOnClickListener {
             startActivity(Intent(this,IntervalAndSequence ::class.java))
         }
-        btn_sequence.setOnClickListener{
-            startActivity(Intent(this,SequenceActivity :: class.java))
+        btn_listOperation.setOnClickListener {
+            startActivity(Intent(this,SetOperationActivity ::class.java))
         }
+        btn_listReserver.setOnClickListener {
+            startActivity(Intent(this,ListReserverActivity ::class.java))
+        }
+        btn_listFliter.setOnClickListener {
+            startActivity(Intent(this,FilterActivity ::class.java))
+        }
+        tnb_list_plusandminus.setOnClickListener {
+            startActivity(Intent(this,PlusAndMinusOperatorActivity ::class.java))
+        }
+        btn_list_group.setOnClickListener {
+            startActivity(Intent(this,GroupActivity ::class.java))
+
+        }
+        btn_list_partoflist.setOnClickListener {
+            startActivity(Intent(this,getPartListActivity ::class.java))
+        }
+        btn_list_oneoflist.setOnClickListener {
+            startActivity(Intent(this,getOneofListActivity ::class.java))
+        }
+        btn_list_listorder.setOnClickListener {
+            startActivity(Intent(this,ListOrderActivity ::class.java))
+        }
+
+
     }
 }

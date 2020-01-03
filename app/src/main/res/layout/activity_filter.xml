@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".list.FilterActivity">
+
+    <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="filter()中的谓词只能检查元素的值,\n
+            filterIndexed()可以筛选元素位置:索引和元素的值
+\n使用filterNot()过滤相反条件集合
+\nfilterIsInstance()返回给定类型的集合元素
+\nfilterNotNull()返回所有非空元素" />
+
+            <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="260dp"
+                    android:src="@mipmap/filter_one" />
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="partition()有一对列表作为返回值:第一个列表包含与谓词匹配的元素，第二个列表包含原始集合中的所有其他元素" />
+
+            <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="100dp"
+                    android:src="@mipmap/filter_two" />
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="如果至少有一个元素与给定谓词匹配，则any()返回true。
+           \n如果所有元素都不匹配给定的谓词，则none()返回true。
+           \n如果所有元素都匹配给定的谓词，则all()返回true。注意，当使用空集合上的任何有效谓词调用all()时，将返回true。" />
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="any()和none()也可以在没有谓词的情况下使用:在这种情况下，它们只是检查集合的空值。如果有元素，any()返回true;如果没有元素，返回false;none()做相反的事" />
+
+            <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/filter_three" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".list.getOneofListActivity">
+
+    <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="elementAt()对于不提供索引访问的集合非常有用，或者不知道静态地提供索引访问。对于List，使用索引访问操作符(get()或[])更符合习惯。" />
+
+            <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="250dp"
+                    android:src="@mipmap/oneoflist_one" />
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="函数first()和last()允许您搜索与给定谓词匹配的元素集合中的元素，调用first()时，返回从前往后第一个匹配的元素，调用last()时获取从后往前第一个匹配的元素
+如果没有元素匹配谓词，两个函数都会抛出异常。为了避免它们，使用firstOrNull()和lastOrNull():如果没有找到匹配的元素，它们将返回null。find()和findLast()同first()和last()基本一样
+" />
+
+            <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="230dp"
+                    android:src="@mipmap/oneoflist_two" />
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="从集合中随机获取单个元素"/>
+            <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="130dp"
+                    android:src="@mipmap/oneoflist_three" />
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="判断集合是否为空及是否包含指定元素或元素的集合"/>
+
+            <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="270dp"
+                    android:src="@mipmap/oneoflist_two" />
+        </LinearLayout>
+    </ScrollView>
+</android.support.constraint.ConstraintLayout>

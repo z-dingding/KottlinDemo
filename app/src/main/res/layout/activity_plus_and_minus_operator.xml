@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".list.PlusAndMinusOperatorActivity">
+
+    <TextView
+
+            android:id="@+id/tv_content_plusandminus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="在Kotlin中，为集合定义了+(+)和-(-)操作符。它们以一个集合作为第一个操作数;第二个操作数可以是一个元素，也可以是另一个集合。返回值是一个新的只读集合:plus的结果包含来自原始集合和来自第二个操作数的元素。
+除来自第二个操作数的元素外，减号的结果包含原始集合的元素。如果它是一个元素，那么-将删除它的第一个匹配项;如果它是一个集合，那么它的所有元素都将被删除。"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+            android:id="@+id/iv_show_plusandminus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/plusandminus_one"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_content_plusandminus"/>
+</android.support.constraint.ConstraintLayout>
