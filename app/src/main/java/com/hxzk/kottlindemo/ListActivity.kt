@@ -3,10 +3,7 @@ package com.hxzk.kottlindemo
 import android.content.Intent
 import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
-import com.hxzk.kottlindemo.list.ConstructorListActivity
-import com.hxzk.kottlindemo.list.InteratorActivity
-import com.hxzk.kottlindemo.list.IntervalAndSequence
-import com.hxzk.kottlindemo.list.ListOverViewActivity
+import com.hxzk.kottlindemo.list.*
 import kotlinx.android.synthetic.main.activity_list.*
 
 class ListActivity : AppCompatActivity() {
@@ -27,6 +24,9 @@ class ListActivity : AppCompatActivity() {
 
         btn_intervalAndSequence.setOnClickListener {
             startActivity(Intent(this,IntervalAndSequence ::class.java))
+        }
+        btn_sequence.setOnClickListener{
+            startActivity(Intent(this,SequenceActivity :: class.java))
         }
     }
 }
