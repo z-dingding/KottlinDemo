@@ -113,6 +113,13 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="20dp"
                 android:text="取单个元素"/>
+
+        <Button
+                android:id="@+id/btn_list_listorder"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="集合排序"/>
     </LinearLayout>
 </ScrollView>
 </android.support.constraint.ConstraintLayout>
