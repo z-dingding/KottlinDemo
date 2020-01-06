@@ -50,6 +50,9 @@ class ListActivity : AppCompatActivity() {
         btn_list_listorder.setOnClickListener {
             startActivity(Intent(this,ListOrderActivity ::class.java))
         }
+        btn_list_aggregation.setOnClickListener {
+            startActivity(Intent(this,AggregationFunActivity ::class.java))
+        }
 
 
     }
