@@ -53,6 +53,9 @@ class ListActivity : AppCompatActivity() {
         btn_list_aggregation.setOnClickListener {
             startActivity(Intent(this,AggregationFunActivity ::class.java))
         }
+        btn_list_writ.setOnClickListener {
+            startActivity(Intent(this,ListWriteActivity ::class.java))
+        }
 
 
     }
