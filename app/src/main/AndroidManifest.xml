@@ -9,7 +9,8 @@
             android:roundIcon="@mipmap/ic_launcher_round"
             android:supportsRtl="true"
             android:theme="@style/AppTheme">
-        <activity android:name=".list.ListOperationActivity"></activity>
+        <activity android:name=".list.SetAboutOperationActivity"></activity>
+        <activity android:name=".list.ListOperationActivity" />
         <activity android:name=".list.ListWriteActivity" />
         <activity android:name=".list.AggregationFunActivity" />
         <activity android:name=".list.ListOrderActivity" />

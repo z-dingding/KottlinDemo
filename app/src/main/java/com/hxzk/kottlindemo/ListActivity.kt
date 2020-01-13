@@ -59,6 +59,9 @@ class ListActivity : AppCompatActivity() {
         btn_list_listoperation.setOnClickListener {
             startActivity(Intent(this,ListOperationActivity ::class.java))
         }
+        btn_list_setoperation.setOnClickListener {
+            startActivity(Intent(this, SetAboutOperationActivity::class.java))
+        }
 
     }
 }

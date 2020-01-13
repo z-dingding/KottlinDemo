@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".list.SetAboutOperationActivity">
+
+    <TextView
+            android:id="@+id/aaaaaaa"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" set 常用操作的扩展函数：查找交集、并集或差集.
+\n交集用union(),对于有序集合，操作数的顺序很重要：在结果集合中，左侧操作数在前.
+\n交集请用intersect()，可以查找查找两个集合中都存在的元素
+\n差集请用subtract() ，这两个函数也能以中缀形式调用，例如， a intersect b
+\n注意， List 也支持 Set 操作。 但是，对 List 进行 Set 操作的结果仍然是 Set ，因此将删除所有重复的元素"
+            android:textAllCaps="false"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+    <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/setopration_one"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/aaaaaaa" />
+</android.support.constraint.ConstraintLayout>
