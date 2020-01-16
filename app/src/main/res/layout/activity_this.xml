@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".other.ThisActivity">
+    <TextView
+            android:id="@+id/aaaaa"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="在类的成员中，this 指的是该类的当前对象。
+\n 在扩展函数或者带有接收者的函数字面值中， this 表示在点左侧传递的 接收者 参数"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintRight_toRightOf="parent"/>
+    <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/this_one"
+            app:layout_constraintTop_toBottomOf="@+id/aaaaa"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintRight_toRightOf="parent"/>
+
+</android.support.constraint.ConstraintLayout>

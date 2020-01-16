@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".other.TypeCheckWithTransLationActivity">
+
+    <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="我们可以在运行时通过使用 is 操作符或其否定形式 !is 来检测对象是否符合给定类型" />
+
+            <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="220dp"
+                    android:src="@mipmap/typecheck_one" />
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="智能转换能否适用根据以下规则：" />
+
+            <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="220dp"
+                    android:src="@mipmap/typecheck_two" />
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                android:text="通常，如果转换是不可能的，转换操作符会抛出一个异常。因此，我们称之为不安全的。as操作符是不安全的，而as?操作符是安全的"/>
+            <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="220dp"
+                    android:src="@mipmap/typecheck_three" />
+        </LinearLayout>
+    </ScrollView>
+
+</android.support.constraint.ConstraintLayout>
