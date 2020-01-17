@@ -3,9 +3,7 @@ package com.hxzk.kottlindemo
 import android.content.Intent
 import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
-import com.hxzk.kottlindemo.other.DeconstructionStatementActivity
-import com.hxzk.kottlindemo.other.ThisActivity
-import com.hxzk.kottlindemo.other.TypeCheckWithTransLationActivity
+import com.hxzk.kottlindemo.other.*
 import kotlinx.android.synthetic.main.activity_other.*
 
 class OtherActivity : AppCompatActivity() {
@@ -21,6 +19,18 @@ class OtherActivity : AppCompatActivity() {
         }
         btn_other_this.setOnClickListener {
             startActivity(Intent(this, ThisActivity :: class.java ))
+        }
+        btn_other_equal.setOnClickListener {
+            startActivity(Intent(this, EqualActivity :: class.java ))
+        }
+        btn_other_opratoroverloading.setOnClickListener {
+            startActivity(Intent(this, OpratorOverloadingActivity :: class.java ))
+        }
+        btn_other_nullsecurity.setOnClickListener {
+            startActivity(Intent(this, NullSecurityActivity :: class.java ))
+        }
+        btn_other_excaption.setOnClickListener {
+            startActivity(Intent(this, ExceptionActivity :: class.java ))
         }
     }
 

@@ -9,7 +9,11 @@
             android:roundIcon="@mipmap/ic_launcher_round"
             android:supportsRtl="true"
             android:theme="@style/AppTheme">
-        <activity android:name=".other.ThisActivity"></activity>
+        <activity android:name=".other.ExceptionActivity"></activity>
+        <activity android:name=".other.NullSecurityActivity" />
+        <activity android:name=".other.OpratorOverloadingActivity" />
+        <activity android:name=".other.EqualActivity" />
+        <activity android:name=".other.ThisActivity" />
         <activity android:name=".other.TypeCheckWithTransLationActivity" />
         <activity android:name=".other.DeconstructionStatementActivity" />
         <activity android:name=".OtherActivity" />

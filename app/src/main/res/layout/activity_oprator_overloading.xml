@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".other.OpratorOverloadingActivity">
+
+    <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+           <TextView
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+               android:text="运算符是一元、二元还是三元，要看它要求有几个数参加运算，比如++运算符，只需要一个数据单元参加运算，如++a，它就是一元运算符；而+、-等运算符，如a+b，要求有两个数据单元参加运算，它就是二元运算符；?:运算符要求三个运算单元，如(ab)?c:d，它就是三元运算符。"/>
+
+         <TextView
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_marginTop="20dp"
+                 android:text=" 重载操作符的函数需要用 operator 修饰符标记,有点类似与方法的重载"/>
+
+            <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/operator_ovriloading"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+</android.support.constraint.ConstraintLayout>

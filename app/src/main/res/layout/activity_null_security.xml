@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".other.NullSecurityActivity">
+<ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Kotlin 的类型系统旨在从我们的代码中消除 NullPointerException。NPE 的唯一可能的原因可能是：
+\n 1.显式调用 throw NullPointerException()
+\n 2.使用了下文描述的 !! 操作符
+\n 3.有些数据在初始化时不一致,如:传递一个在构造函数中出现的未初始化的 this 并用于其他地方（“泄漏 this”）等等
+\n 4.Java 互操作,如:企图访问平台类型的 null 引用的成员"/>
+        <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="190dp"
+                android:src="@mipmap/nullsecurity_one"/>
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="除了完整的 if-表达式，这还可以通过 Elvis 操作符表达，写作 [?:]"/>
+        <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="190dp"
+                android:src="@mipmap/nullsecurity_two"/>
+        <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="190dp"
+                android:src="@mipmap/nullsecurity_three"/>
+    </LinearLayout>
+</ScrollView>
+</android.support.constraint.ConstraintLayout>

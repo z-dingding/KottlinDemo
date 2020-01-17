@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".other.EqualActivity">
+    <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Kotlin 中有两种类型的相等性：
+\n结构相等（用 equals() 检测）；
+\n引用相等（两个引用指向同一对象）
+"/>
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:text="结构相等由 ==（以及其否定形式 !=）操作判断。按照惯例，像 a == b 这样的表达式会翻译成：
+\na?.equals(b) ?: (b === null).也就是说如果 a 不是 null 则调用 equals(Any?) 函数，否则（即 a 是 null）检测 b 是否与 null 引用相等。"/>
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                android:text="浮点数相等性:当相等性检测的两个操作数都是静态已知的（可空或非空的）Float 或 Double 类型时，该检测遵循 IEEE 754 浮点数运算标准。否则会使用不符合该标准的结构相等性检测，这会导致 NaN 等于其自身，而 -0.0 不等于 0.0。"/>
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:text="引用相等由 ===（以及其否定形式 !==）操作判断。a === b 当且仅当 a 与 b 指向同一个对象时求值为 true。对于运行时表示为原生类型的值 （例如 Int），=== 相等检测等价于 == 检测"/>
+        </LinearLayout>
+    </ScrollView>
+
+</android.support.constraint.ConstraintLayout>
