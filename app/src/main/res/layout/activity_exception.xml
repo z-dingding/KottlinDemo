@@ -5,26 +5,31 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         tools:context=".other.ExceptionActivity">
+
     <ScrollView
             android:layout_width="match_parent"
             android:layout_height="match_parent">
+
         <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:orientation="vertical">
+
             <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Kotlin 中所有异常类都是 Throwable 类的子孙类。 每个异常都有消息、堆栈回溯信息以及可选的原因.通常情况下Kotlin使用throw-表达式来抛出异常
-使用try-表达式来捕获异常"/>
-<ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="350dp"
-        android:src="@mipmap/exception_one"/>
+使用try-表达式来捕获异常" />
+
             <ImageView
                     android:layout_width="wrap_content"
                     android:layout_height="350dp"
-                    android:src="@mipmap/exception_two"/>
+                    android:src="@mipmap/exception_one" />
+
+            <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="350dp"
+                    android:src="@mipmap/exception_two" />
         </LinearLayout>
     </ScrollView>
 

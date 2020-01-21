@@ -32,6 +32,9 @@ class OtherActivity : AppCompatActivity() {
         btn_other_excaption.setOnClickListener {
             startActivity(Intent(this, ExceptionActivity :: class.java ))
         }
+        btn_other_annotation.setOnClickListener {
+            startActivity(Intent(this, AnnotationActivity :: class.java ))
+        }
     }
 
 }
