@@ -35,6 +35,9 @@ class OtherActivity : AppCompatActivity() {
         btn_other_annotation.setOnClickListener {
             startActivity(Intent(this, AnnotationActivity :: class.java ))
         }
+        btn_other_reflect.setOnClickListener {
+            startActivity(Intent(this, ReflectionActivity :: class.java ))
+        }
     }
 
 }

@@ -9,7 +9,8 @@
             android:roundIcon="@mipmap/ic_launcher_round"
             android:supportsRtl="true"
             android:theme="@style/AppTheme">
-        <activity android:name=".other.AnnotationActivity"></activity>
+        <activity android:name=".other.ReflectionActivity"></activity>
+        <activity android:name=".other.AnnotationActivity" />
         <activity android:name=".other.ExceptionActivity" />
         <activity android:name=".other.NullSecurityActivity" />
         <activity android:name=".other.OpratorOverloadingActivity" />
