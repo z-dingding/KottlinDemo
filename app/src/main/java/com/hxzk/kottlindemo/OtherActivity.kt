@@ -38,6 +38,9 @@ class OtherActivity : AppCompatActivity() {
         btn_other_reflect.setOnClickListener {
             startActivity(Intent(this, ReflectionActivity :: class.java ))
         }
+        btn_other_scope.setOnClickListener {
+            startActivity(Intent(this, ScopeActivity :: class.java ))
+        }
     }
 
 }

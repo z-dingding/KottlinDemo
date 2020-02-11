@@ -70,6 +70,12 @@
                 android:layout_height="wrap_content"
                 android:textAllCaps="false"
                 android:text="反射"/>
+        <Button
+                android:id="@+id/btn_other_scope"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAllCaps="false"
+                android:text="作用域函数"/>
     </LinearLayout>
 </ScrollView>
 

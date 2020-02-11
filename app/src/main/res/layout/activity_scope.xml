@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".other.ScopeActivity">
+
+    <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="作用域函数共有以下五种：let、run、with、apply 以及 also,当对一个对象调用这样的函数并提供一个 lambda 表达式时，它会形成一个临时作用域。在此作用域中，可以访问该对象而无需其名称。" />
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="以作用域函数Let为例，写一个典型用法。作用域函数没有引入任何新的技术，但是它们可以使你的代码更加简洁易读。" />
+
+        <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="130dp"
+                android:src="@mipmap/scope_one" />
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="由于作用域函数本质上都非常相似，因此了解它们之间的区别很重要。每个作用域函数之间有两个主要区别：
+\n区别一:引用上下文对象的方式(上下文对象：this 还是 it)
+\n区别二:返回值(apply 及 also 返回上下文对象,而let、run 及 with 返回 lambda 表达式结果)"/>
+        <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="360dp"
+                android:src="@mipmap/scope_two" />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/scope_three" />
+<TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="根据返回结果，作用域函数可以分为以下两类:
+\n apply 及 also 返回上下文对象。
+\n let、run 及 with 返回 lambda 表达式结果"/>
+        <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/scope_four" />
+    </LinearLayout>
+
+    </ScrollView>
+</android.support.constraint.ConstraintLayout>
