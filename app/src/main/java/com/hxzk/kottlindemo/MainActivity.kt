@@ -37,5 +37,9 @@ class MainActivity : AppCompatActivity() {
         btn_other.setOnClickListener{
             startActivity(Intent(this,OtherActivity ::class.java))
         }
+
+        btn_reference.setOnClickListener{
+            startActivity(Intent(this,ReferenceActivity ::class.java))
+        }
     }
 }

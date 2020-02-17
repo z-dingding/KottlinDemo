@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".ReferenceActivity">
+
+    <Button
+            android:id="@+id/btn_keyword"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="关键字和操作符"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+       />
+
+    <Button
+            android:id="@+id/btn_grammar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="语法"
+            android:layout_marginTop="30dp"
+            app:layout_constraintEnd_toEndOf="@id/btn_keyword"
+            app:layout_constraintStart_toStartOf="@id/btn_keyword"
+            app:layout_constraintTop_toBottomOf="@id/btn_keyword"/>
+</android.support.constraint.ConstraintLayout>

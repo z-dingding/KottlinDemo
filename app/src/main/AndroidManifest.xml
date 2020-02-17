@@ -9,7 +9,9 @@
             android:roundIcon="@mipmap/ic_launcher_round"
             android:supportsRtl="true"
             android:theme="@style/AppTheme">
-        <activity android:name=".other.ScopeActivity"></activity>
+        <activity android:name=".reference.KeywordWithOperatorActivity"></activity>
+        <activity android:name=".ReferenceActivity" />
+        <activity android:name=".other.ScopeActivity" />
         <activity android:name=".other.ReflectionActivity" />
         <activity android:name=".other.AnnotationActivity" />
         <activity android:name=".other.ExceptionActivity" />
